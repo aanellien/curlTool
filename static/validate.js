@@ -1,19 +1,14 @@
 var ERROR_MESSAGE = "Error occured. Excecution stopped.";
 
 function validate() {
-   var bucket_name= document.getElementsByName("bucket_name")[0].value;
+   var bucket_name= document.getElementById("bucket_name").value;
   if(!bucket_name){
     alert("Please fill name of Bucket");
     return ;
   }
-  var file_name = document.getElementsByName("file_name")[0].value;
+  var file_name = document.getElementById("file_name").value;
   if(!file_name){
     alert("Please fill file name");
-    return ;
-  }
-  var file= document.getElementsByName("file")[0].value;
-  if(!file){
-    alert("Please select file to Upload")
     return ;
   }
 
